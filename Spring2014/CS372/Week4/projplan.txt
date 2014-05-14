@@ -1,0 +1,39 @@
+Danny Burrows
+
+Project Plan - Implemented in Python (or C, I have not fully decided as of yet)
+
+Psuedo Code
+------------
+
+Client:
+
+Import sockets library
+Accept command line parameters
+Parse CLI args
+Create a socket connection
+Pass port to socket connection
+Recieve input from host
+Close socket connection
+Display the information
+
+Server:
+
+Import sockets library
+Accept and parse CLI args
+Create a socket connection at specified port
+loop:
+	Wait for client to connect
+	Receive request
+	Send response
+	Close connection
+
+
+Explanation
+------------
+
+Client:
+The client will accept CLI args for a host and a port, attempting to create a connection to the server at that socket. The actions passed to the client on the command line will be sent to the server, the server will process and send a response back to the client. The client will display either an error or a success message.
+
+
+Server:
+The server will be created at a specified port taken as a command line argument. When the server is started, it will wait for a connection from the client with a request. Once the request is received it will respond to the request and send the file requested (or other action such as list) back to the client.

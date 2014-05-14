@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class='ui-mobile'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>496 - Assign 1</title>
+	<link rel="stylesheet" href="css/mobile.css">
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css">
+	<script src="js/jquery.js"></script>
+	<style type="text/css"></style>
+	<script src="js/jquery.mobile-1.4.0.min.js"></script>	
+</head>
+<body class='ui-mobile-viewport ui-overlay-c'>
+	<div data-role="page" class="ui-page ui-body-c ui-page-active">
+		<!-- Header -->
+		<div data-role="header" class="ui-header ui-bar-a" role="banner">
+			<h1>Input Data</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" class="ui-btn-active">Input Data</a></li>
+				<li><a href="images.html">View Images</a></li>
+			</ul>
+		</div>
+		<!-- Content -->
+		<div data-role="content" class="ui-content" role="main">
+			<div class="center-wrapper">
+				<form id="submitForm" name="submitForm" method="post" action="">
+					<!-- date entry field -->
+					<label for="date">Date of birth:</label>
+					<input type="date" name="date" id="date" value="">
+					<!-- string entry -->
+					<label for="text-basic">Favorite Movie:</label>
+					<input type="text" name="text-basic" id="text-basic">
+					<!-- category selection -->
+					<fieldset data-role="controlgroup">
+						<legend>Genres of Movies:</legend>
+						<input type="checkbox" name="horror" id="horror">
+						<label for="horror">Horror</label>
+						<input type="checkbox" name="Drama" id="Drama">
+						<label for="Drama">Drama</label>
+						<input type="checkbox" name="Romantic" id="Romantic">
+						<label for="Romantic">Romantic</label>
+						<input type="checkbox" name="Action" id="Action">
+						<label for="Action">Action</label>
+						<input type="checkbox" name="Sci-Fi/Fantasy" id="Sci-Fi/Fantasy">
+						<label for="Sci-Fi/Fantasy">Sci-Fi/Fantasy</label>
+					</fieldset>
+					<!-- submit button -->
+					<br>
+					<button type="submit" class="ui-shadow ui-btn ui-corner-all">Submit</button>
+				</form>
+			</div>
+		</div>
+		<!-- Footer -->
+		<div data-role="footer" class="ui-footer ui-bar-a" role="contentinfo">
+			<h4 class="ui-title" role="heading" aria-level="1">Footer</h4>
+		</div>
+	</div>
+</body>
+</html>

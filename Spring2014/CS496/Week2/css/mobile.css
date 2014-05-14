@@ -1,0 +1,19 @@
+/* from: http://stackoverflow.com/questions/4329866/centering-elements-in-jquery-mobile */
+.center-wrapper {
+	text-align: center;
+}
+.center-wrapper * {
+	margin: 0 auto;
+}
+#jelly {
+	width: 33%;
+}
+#koala {
+	width: 33%;
+}
+#penguins {
+	width: 33%;
+}
+#tulips {
+	width: 33%;
+}

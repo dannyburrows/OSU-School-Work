@@ -1,0 +1,24 @@
+/***************************************************\
+| Danny Burrows                                     |
+| burrowsd@onid.oregonstate.edu                     |
+| CS362 - Software Engineering 2                    |
+| Assignment # 2                                    |
+| documentation.txt                                 |
+|                                                   |
+| This file explains the adeventurer and the        |
+| smithy cards in the C implementation of           |
+| domininion.                                       |
+\***************************************************/
+
+adventurer cards
+----------------
+Draws cards until two treasure cards are drawn
+Tracks whether the drawn card is cooper, silver or gold and increments drawntreasure when the drawn card is one of the three
+If the card is not a treasure card then it decrements the overall handcount for the player and increases the count of cards that has been drawn.
+Functionally speaking, it keeps track of a temporary hand that each drawn card is added to, presumably to be displayed separately.
+Nothing is actually done with the temporary hand once two treasures are drawn so the cards are placed back into the player's discard pile via state->discard.
+
+smithy cards
+----------------
+Draws additional 3 cards, adding them to the current player's hand. Once the cards are drawn via drawCard, the discardCard function is called and all the player's
+cards are discarded.
